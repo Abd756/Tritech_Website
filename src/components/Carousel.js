@@ -3,31 +3,35 @@ import { useState, useEffect, useRef } from 'react';
 const slides = [
   {
     image: '/images/corousel/corousel-1.png',
-    title: 'Empowering Industries with ',
-    highlight: 'Automation',
-    subtitle: 'At Interlink Enterprises, we specialize in delivering cutting-edge automation solutions, transforming industries across Pakistan with our high-quality products and services.',
-    badge: 'INTERLINK GROUP OF COMPANIES',
+    title: 'Superior ',
+    highlight: 'LV Switchgear',
+    highlightColor: 'text-primary',
+    subtitle: 'TRI TECH (PVT) LTD specializes in high-quality low voltage panels, ensuring safety and reliability for industrial systems up to 6300A.',
+    badge: 'TRI TECH (PVT) LIMITED',
   },
   {
     image: '/images/corousel/corousel-2.png',
-    title: 'Over Three Decades of ',
-    highlight: 'Excellence',
-    subtitle: 'Established Since 1996\nInterlink Enterprises has been at the forefront of automation in Pakistan, offering state-of-the-art solutions to diverse industries, from oil & gas to FMCG and power plants.',
-    badge: '',
+    title: 'Advanced ',
+    highlight: 'Automation Solutions',
+    highlightColor: 'text-yellow',
+    subtitle: 'Providing custom-engineered PLC & DCS systems to optimize productivity and operational efficiency across diverse sectors.',
+    badge: 'TRI TECH (PVT) LIMITED',
   },
   {
     image: '/images/corousel/corousel-3.png',
-    title: 'Your Trusted Partner in ',
-    highlight: 'Industrial Solutions',
-    subtitle: 'Industry Leaders in Automation\nOur mission is to provide cost-effective, reliable, and innovative automation solutions that enhance productivity and operational efficiency across a wide range of sectors.',
-    badge: '',
+    title: 'Specialist ',
+    highlight: 'Plant Services',
+    highlightColor: 'text-accent',
+    subtitle: 'Comprehensive shutdown services, site installation, and commissioning delivered with stringent safety standards and minimal downtime.',
+    badge: 'TRI TECH (PVT) LIMITED',
   },
   {
     image: '/images/corousel/corousel-4.png',
-    title: 'Over ',
-    highlight: 'Two Decades',
-    subtitle: 'A Legacy of Innovation\nInterlink Enterprises is proud to be a pioneer in industrial automation, offering a wide range of solutions for the oil & gas, cement, power, chemical, and textile industries in Pakistan.',
-    badge: '',
+    title: 'Delivering Quality ',
+    highlight: 'With Might and Main',
+    highlightColor: 'text-primary',
+    subtitle: 'Since 2008, TRI TECH has built a solid reputation for excellence in electrical and mechanical engineering throughout Pakistan.',
+    badge: 'TRI TECH (PVT) LIMITED',
   },
 ];
 
@@ -44,7 +48,7 @@ export default function Carousel() {
   }, [current]);
 
   return (
-    <div className="relative w-full h-[350px] md:h-[450px] lg:h-[500px] overflow-hidden shadow-lg">
+    <div className="relative w-full h-[350px] md:h-[450px] lg:h-[500px] overflow-hidden shadow-lg border-b-4 border-primary">
       {slides.map((slide, idx) => (
         <div
           key={idx}
@@ -57,13 +61,16 @@ export default function Carousel() {
           />
           <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center px-6 md:px-16 lg:px-24">
             {slide.badge && (
-              <span className="text-xs md:text-sm font-bold text-white mb-2 tracking-widest uppercase drop-shadow-lg">{slide.badge}</span>
+              <div className="flex items-center gap-2 mb-2">
+                <div className="w-8 h-[2px] bg-primary"></div>
+                <span className="text-xs md:text-sm font-bold text-white tracking-widest uppercase drop-shadow-lg">{slide.badge}</span>
+              </div>
             )}
             <h1 className="text-3xl md:text-5xl font-extrabold text-white leading-tight drop-shadow-lg mb-2">
               {slide.title}
-              <span className="text-accent">{slide.highlight}</span>
+              <span className={slide.highlightColor}>{slide.highlight}</span>
             </h1>
-            <p className="mt-2 text-white text-base md:text-lg font-semibold drop-shadow-lg max-w-2xl whitespace-pre-line">
+            <p className="mt-2 text-white text-base md:text-lg font-semibold drop-shadow-lg max-w-2xl whitespace-pre-line animate-fade-in-up">
               {slide.subtitle}
             </p>
           </div>
@@ -71,23 +78,35 @@ export default function Carousel() {
       ))}
       {/* Arrows */}
       <button
-        className="absolute left-4 top-1/2 -translate-y-1/2 bg-white bg-opacity-70 hover:bg-accent hover:text-white text-primary rounded-full p-2 shadow-md transition-colors duration-200 z-20"
+        className="absolute left-4 top-1/2 -translate-y-1/2 bg-white bg-opacity-70 hover:bg-primary hover:text-white text-primary rounded-full p-2 shadow-md transition-all duration-300 z-20 group"
         onClick={prevSlide}
         aria-label="Previous slide"
       >
-        <svg className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+        <svg className="h-6 w-6 transform group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
         </svg>
       </button>
       <button
-        className="absolute right-4 top-1/2 -translate-y-1/2 bg-white bg-opacity-70 hover:bg-accent hover:text-white text-primary rounded-full p-2 shadow-md transition-colors duration-200 z-20"
+        className="absolute right-4 top-1/2 -translate-y-1/2 bg-white bg-opacity-70 hover:bg-primary hover:text-white text-primary rounded-full p-2 shadow-md transition-all duration-300 z-20 group"
         onClick={nextSlide}
         aria-label="Next slide"
       >
-        <svg className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+        <svg className="h-6 w-6 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
         </svg>
       </button>
+
+      {/* Progress Indicators */}
+      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-3 z-20">
+        {slides.map((_, idx) => (
+          <button
+            key={idx}
+            onClick={() => setCurrent(idx)}
+            className={`h-1.5 transition-all duration-300 rounded-full ${idx === current ? 'w-8 bg-primary' : 'w-2 bg-white/50 hover:bg-white'}`}
+            aria-label={`Go to slide ${idx + 1}`}
+          />
+        ))}
+      </div>
     </div>
   );
 }

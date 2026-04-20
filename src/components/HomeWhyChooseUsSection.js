@@ -4,97 +4,99 @@ import { ExperienceIcon, TeamIcon, TechIcon, SupportIcon } from './WhyChooseUsIc
 const features = [
   {
     icon: <ExperienceIcon />,
-    title: '30+ Years Experience',
-    desc: 'Decades of expertise in industrial automation solutions.'
-  },
-  {
-    icon: <TeamIcon />,
-    title: 'Certified Engineers',
-    desc: 'Skilled, certified professionals for every project.'
+    title: '15+ Years Excellence',
+    desc: 'Founded in 2008, TRI TECH (PVT) LTD has built a solid reputation for quality and reliability in electrical engineering.',
+    color: 'text-primary'
   },
   {
     icon: <TechIcon />,
-    title: 'Cutting-Edge Technology',
-    desc: 'We use the latest technology for maximum efficiency.'
+    title: 'IEC Standards',
+    desc: 'Our switchgear is manufactured according to international IEC 60439 standards for maximum safety and performance.',
+    color: 'text-yellow'
+  },
+  {
+    icon: <TeamIcon />,
+    title: 'Expert Task Force',
+    desc: 'Highly skilled engineering professionals dedicated to safe execution and minimizing industrial downtime.',
+    color: 'text-accent'
   },
   {
     icon: <SupportIcon />,
-    title: '24/7 Support',
-    desc: 'Reliable support whenever you need it.'
+    title: 'Tailored Solutions',
+    desc: 'We engineer custom electrical and mechanical solutions specifically designed for your unique industrial requirements.',
+    color: 'text-primary'
   }
 ];
 
 export default function HomeWhyChooseUsSection() {
   return (
-    <section className="relative w-full py-24 px-4 md:px-0 bg-gradient-to-br from-[#2856a3] to-[#1e4483] overflow-hidden">
-
-      {/* Decorative background elements */}
-      <div className="absolute top-0 right-0 p-12 opacity-10">
-        <svg width="200" height="200" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="50" cy="50" r="40" stroke="white" strokeWidth="2" />
-          <circle cx="50" cy="50" r="30" stroke="white" strokeWidth="2" />
-          <path d="M50 10 L50 90 M10 50 L90 50" stroke="white" strokeWidth="2" />
-        </svg>
-      </div>
+    <section className="relative w-full py-24 px-4 md:px-0 bg-[#0f172a] overflow-hidden">
+      
+      {/* Dynamic Background Accents */}
+      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/20 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/2 opacity-30 animate-pulse"></div>
+      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-accent/20 rounded-full blur-[120px] translate-y-1/2 -translate-x-1/2 opacity-30 animate-pulse"></div>
 
       <div className="relative max-w-7xl mx-auto flex flex-col items-center z-10">
 
         {/* Header */}
         <motion.div
-          className="text-center mb-16"
-          initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6 }}
+          className="text-center mb-20"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-6 tracking-tight drop-shadow-md">
-            Why Choose <span className="text-orange-400">Us</span>
+          <span className="text-primary font-bold tracking-[0.2em] uppercase text-sm mb-4 block">Proven Strengths</span>
+          <h2 className="text-4xl md:text-6xl font-extrabold text-white mb-6 uppercase tracking-tight">
+            Why Partner with <span className="text-primary">TRI TECH</span>
           </h2>
-          <p className="text-blue-100 text-lg max-w-2xl mx-auto">
-            Empowering industries with reliability, innovation, and expertise.
+          <div className="w-24 h-1.5 bg-accent mx-auto rounded-full mb-6"></div>
+          <p className="text-slate-400 text-lg max-w-2xl mx-auto leading-relaxed">
+            Delivering high-performance electrical and mechanical solutions with a commitment to might and main.
           </p>
         </motion.div>
 
         {/* Grid */}
-        <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {features.map((feature, idx) => (
             <motion.div
               key={idx}
-              className="bg-white rounded-xl p-8 flex flex-col items-start hover:bg-orange-50 transition-colors duration-300 shadow-2xl group cursor-default h-full"
-              initial={{ opacity: 0, y: 50 }}
+              className="relative group h-full"
+              initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: idx * 0.1 }}
+              transition={{ duration: 0.6, delay: idx * 0.1 }}
               viewport={{ once: true }}
-              whileHover={{ y: -10 }}
             >
-              {/* Icon */}
-              <div className="w-14 h-14 mb-6 rounded-lg bg-orange-100 flex items-center justify-center text-orange-600 text-2xl shadow-inner group-hover:bg-orange-500 group-hover:text-white transition-all duration-300">
-                <span className="w-8 h-8 flex items-center justify-center child-svg-full">
+              {/* Glass Card */}
+              <div className="h-full backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl p-8 flex flex-col items-start transition-all duration-500 group-hover:bg-white/10 group-hover:border-white/20 group-hover:-translate-y-2 group-hover:shadow-[0_20px_50px_rgba(192,57,43,0.15)]">
+                
+                {/* Icon Container */}
+                <div className={`w-14 h-14 mb-8 rounded-xl bg-slate-900/50 flex items-center justify-center ${feature.color} border border-white/10 transition-all duration-500 group-hover:scale-110 group-hover:bg-primary group-hover:text-white group-hover:shadow-[0_0_20px_rgba(192,57,43,0.4)]`}>
                   {feature.icon}
-                </span>
-              </div>
+                </div>
 
-              <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-orange-600 transition-colors">
-                {feature.title}
-              </h3>
+                <h3 className="text-xl font-bold text-white mb-4 group-hover:text-primary transition-colors">
+                  {feature.title}
+                </h3>
 
-              <p className="text-gray-600 leading-relaxed text-sm group-hover:text-gray-700">
-                {feature.desc}
-              </p>
+                <p className="text-slate-400 leading-relaxed text-sm group-hover:text-slate-300 transition-colors">
+                  {feature.desc}
+                </p>
 
-              <div className="w-full h-1 bg-gray-100 mt-auto rounded-full overflow-hidden">
-                <div className="h-full bg-orange-500 w-0 group-hover:w-full transition-all duration-700 ease-out"></div>
+                {/* Bottom Highlight Line */}
+                <div className="w-full h-1 bg-white/5 mt-8 rounded-full overflow-hidden">
+                  <motion.div 
+                    className="h-full bg-primary"
+                    initial={{ width: 0 }}
+                    whileInView={{ width: '100%' }}
+                    transition={{ duration: 1.5, delay: 0.5 + (idx * 0.2) }}
+                  ></motion.div>
+                </div>
               </div>
             </motion.div>
           ))}
         </div>
       </div>
-      <style jsx global>{`
-        .child-svg-full svg {
-          width: 100%;
-          height: 100%;
-        }
-      `}</style>
     </section>
   );
 }

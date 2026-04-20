@@ -27,10 +27,10 @@ export default function Navbar() {
         <div className="flex-1 flex items-center justify-end">
           <div className="hidden md:flex space-x-4 lg:space-x-8 items-center px-4">
             <ActiveLink href="/" scrolled={isScrolled}>Home</ActiveLink>
-            <ActiveLink href="/about" scrolled={isScrolled}>About Us</ActiveLink>
-            <ActiveLink href="/products" scrolled={isScrolled}>Products</ActiveLink>
-            <ActiveLink href="/services" scrolled={isScrolled}>Services</ActiveLink>
-            <ActiveLink href="/contact" scrolled={isScrolled}>Contact Us</ActiveLink>
+            <ActiveLink href="#" scrolled={isScrolled}>About Us</ActiveLink>
+            <ActiveLink href="#" scrolled={isScrolled}>Products</ActiveLink>
+            <ActiveLink href="#" scrolled={isScrolled}>Services</ActiveLink>
+            <ActiveLink href="#" scrolled={isScrolled}>Contact Us</ActiveLink>
           </div>
           {/* Mobile menu button and menu */}
           <div className="md:hidden flex items-center">
@@ -74,16 +74,16 @@ function MobileMenu({ isScrolled }) {
             <ActiveLink href="/" >
               <span onClick={handleLinkClick}>Home</span>
             </ActiveLink>
-            <ActiveLink href="/about">
+            <ActiveLink href="#">
               <span onClick={handleLinkClick}>About Us</span>
             </ActiveLink>
-            <ActiveLink href="/products">
+            <ActiveLink href="#">
               <span onClick={handleLinkClick}>Products</span>
             </ActiveLink>
-            <ActiveLink href="/services">
+            <ActiveLink href="#">
               <span onClick={handleLinkClick}>Services</span>
             </ActiveLink>
-            <ActiveLink href="/contact">
+            <ActiveLink href="#">
               <span onClick={handleLinkClick}>Contact Us</span>
             </ActiveLink>
           </div>

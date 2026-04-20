@@ -43,10 +43,10 @@ export default function Footer() {
           <span className="font-semibold text-base">Quick Links</span>
           <ul className="mt-2 space-y-1">
             <li><Link href="/" className="hover:text-accent">Home</Link></li>
-            <li><Link href="/about" className="hover:text-accent">About Us</Link></li>
-            <li><Link href="/products" className="hover:text-accent">Products</Link></li>
-            <li><Link href="/services" className="hover:text-accent">Services</Link></li>
-            <li><Link href="/contact" className="hover:text-accent">Contact Us</Link></li>
+            <li><Link href="#" className="hover:text-accent">About Us</Link></li>
+            <li><Link href="#" className="hover:text-accent">Products</Link></li>
+            <li><Link href="#" className="hover:text-accent">Services</Link></li>
+            <li><Link href="#" className="hover:text-accent">Contact Us</Link></li>
           </ul>
         </div>
         {/* Social Media */}
