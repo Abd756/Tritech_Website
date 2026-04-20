@@ -1,0 +1,21 @@
+# Node modules
+node_modules/
+
+# Next.js build output
+.next/
+
+# Environment variables
+.env
+.env.local
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Log files
+npm-debug.log
+yarn-error.log
+
+# VS Code settings (optional)
+.vscode/
