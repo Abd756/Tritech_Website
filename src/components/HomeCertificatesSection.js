@@ -30,11 +30,11 @@ export default function HomeCertificatesSection() {
                 </motion.div>
 
                 {/* Grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 w-full px-4">
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 w-full px-4">
                     {certificatesData.map((cert, idx) => (
                         <motion.div
                             key={cert.id}
-                            className="group bg-white rounded-xl shadow-md border border-gray-100 p-6 flex flex-col items-center hover:shadow-2xl hover:border-orange-200 transition-all duration-300 relative overflow-hidden cursor-pointer"
+                            className="group bg-white rounded-xl shadow-sm border border-gray-100 p-4 flex flex-col items-center hover:shadow-lg hover:border-orange-200 transition-all duration-300 relative overflow-hidden cursor-pointer"
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: idx * 0.1 }}
@@ -42,7 +42,7 @@ export default function HomeCertificatesSection() {
                             onClick={() => openCertificate(cert)}
                         >
                             {/* Logo Container */}
-                            <div className="h-40 w-full flex items-center justify-center mb-4 transition-transform duration-500 group-hover:scale-105">
+                            <div className="h-24 w-full flex items-center justify-center mb-3 transition-transform duration-500 group-hover:scale-105">
                                 <img
                                     src={cert.logo}
                                     alt={cert.title}
@@ -50,14 +50,14 @@ export default function HomeCertificatesSection() {
                                 />
                             </div>
 
-                            <h3 className="text-gray-800 font-bold text-center group-hover:text-primary transition-colors mb-2 md:mb-8 text-lg">
+                            <h3 className="text-gray-800 font-bold text-center group-hover:text-primary transition-colors mb-2 text-sm leading-tight">
                                 {cert.title}
                             </h3>
 
                             {/* Mobile-only CTA */}
                             <div className="md:hidden mt-2 mb-4">
                                 <span className="text-primary text-sm font-semibold border border-primary px-4 py-1 rounded-full">
-                                    Tap to View
+                                    View
                                 </span>
                             </div>
 
