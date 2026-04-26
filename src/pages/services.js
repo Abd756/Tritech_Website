@@ -38,7 +38,7 @@ export default function Services() {
         {/* Background Patterns */}
         <div className="absolute inset-0 opacity-10 blur-[2px] pointer-events-none z-0">
           <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary rounded-full blur-[120px] -translate-y-1/2 translate-x-1/2"></div>
-          <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-orange-500 rounded-full blur-[120px] translate-y-1/2 -translate-x-1/2"></div>
+          <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-primary rounded-full blur-[120px] translate-y-1/2 -translate-x-1/2"></div>
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 text-center">
@@ -47,7 +47,7 @@ export default function Services() {
             animate={{ opacity: 1, y: 0 }}
             className="text-4xl md:text-6xl font-extrabold tracking-tight mb-6"
           >
-            Our  <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-orange-400">Services</span>
+            Our  <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-yellow">Services</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0 }}
@@ -126,7 +126,7 @@ export default function Services() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Our Service <span className="text-primary">Workflow</span></h2>
-            <div className="w-24 h-1.5 bg-orange-500 mx-auto rounded-full"></div>
+            <div className="w-24 h-1.5 bg-primary mx-auto rounded-full"></div>
           </div>
 
           <div className="relative">
@@ -149,7 +149,7 @@ export default function Services() {
                     viewport={{ once: true }}
                     transition={{ delay: idx * 0.1 }}
                   >
-                    <div className="text-4xl font-black text-primary/10 absolute top-4 right-6 leading-none group-hover:text-orange-500/40 transition-colors duration-300">{p.step}</div>
+                    <div className="text-4xl font-black text-primary/10 absolute top-4 right-6 leading-none group-hover:text-primary/40 transition-colors duration-300">{p.step}</div>
                     <div className="w-12 h-12 bg-primary/5 rounded-2xl flex items-center justify-center mb-6 text-primary">
                       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
                     </div>
@@ -165,13 +165,13 @@ export default function Services() {
                         <motion.div
                           initial={{ height: 0 }}
                           whileInView={{ height: 32 }}
-                          className="w-0.5 bg-gradient-to-b from-primary to-orange-500 rounded-full"
+                          className="w-0.5 bg-gradient-to-b from-primary to-primary rounded-full"
                         />
                       </div>
 
                       {/* Desktop Arrow (Horizontal) */}
-                      <div className="hidden md:block absolute top-1/2 -right-8 w-8 h-0.5 bg-gradient-to-r from-primary to-orange-500 -translate-y-1/2 z-20">
-                        <div className="absolute right-0 top-1/2 -translate-y-1/2 w-2 h-2 bg-orange-500 rounded-full shadow-[0_0_10px_rgba(249,115,22,0.5)]"></div>
+                      <div className="hidden md:block absolute top-1/2 -right-8 w-8 h-0.5 bg-gradient-to-r from-primary to-primary -translate-y-1/2 z-20">
+                        <div className="absolute right-0 top-1/2 -translate-y-1/2 w-2 h-2 bg-primary rounded-full shadow-[0_0_10px_rgba(249,115,22,0.5)]"></div>
                       </div>
                     </>
                   )}
@@ -189,7 +189,7 @@ export default function Services() {
         <div className="bg-primary rounded-[3rem] p-12 md:p-20 text-center text-white relative overflow-hidden shadow-2xl">
           {/* Decorative Circles */}
           <div className="absolute top-0 left-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
-          <div className="absolute bottom-0 right-0 w-64 h-64 bg-orange-500/20 rounded-full blur-3xl translate-x-1/2 translate-y-1/2"></div>
+          <div className="absolute bottom-0 right-0 w-64 h-64 bg-primary/20 rounded-full blur-3xl translate-x-1/2 translate-y-1/2"></div>
 
           <div className="relative z-10 max-w-2xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-bold mb-8">Ready to Optimize Your Operations?</h2>
@@ -198,7 +198,7 @@ export default function Services() {
             </p>
             <Link
               href="/contact"
-              className="inline-block bg-white text-primary px-12 py-5 rounded-full font-bold text-xl hover:bg-orange-500 hover:text-white transition-all duration-300 shadow-xl hover:shadow-2xl"
+              className="inline-block bg-white text-primary px-12 py-5 rounded-full font-bold text-xl hover:bg-primary hover:text-white transition-all duration-300 shadow-xl hover:shadow-2xl"
             >
               Get Started Now
             </Link>

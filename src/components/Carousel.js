@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
+import Link from 'next/link';
 
 const slides = [
   {
@@ -48,7 +49,7 @@ export default function Carousel() {
   }, [current]);
 
   return (
-    <div className="relative w-full h-[350px] md:h-[450px] lg:h-[500px] overflow-hidden shadow-lg border-b-4 border-primary">
+    <div className="relative w-full h-[400px] md:h-[500px] lg:h-[600px] overflow-hidden shadow-lg border-b-4 border-primary">
       {slides.map((slide, idx) => (
         <div
           key={idx}
@@ -73,6 +74,17 @@ export default function Carousel() {
             <p className="mt-2 text-white text-base md:text-lg font-semibold drop-shadow-lg max-w-2xl whitespace-pre-line animate-fade-in-up">
               {slide.subtitle}
             </p>
+
+            <div className="mt-8 flex flex-wrap gap-4 animate-fade-in-up">
+              <Link href="/products" className="bg-primary hover:bg-accent text-white px-6 md:px-8 py-3 rounded-lg font-bold transition-all transform hover:-translate-y-1 shadow-lg flex items-center gap-2 group">
+                Explore Products
+                <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
+              </Link>
+              <Link href="/services" className="bg-yellow hover:bg-accent text-gray-900 hover:text-white px-6 md:px-8 py-3 rounded-lg font-bold transition-all transform hover:-translate-y-1 shadow-lg flex items-center gap-2 group">
+                Our Services
+                <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
+              </Link>
+            </div>
           </div>
         </div>
       ))}

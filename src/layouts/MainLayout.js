@@ -1,5 +1,6 @@
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import ScrollToTop from '../components/ScrollToTop';
 
 function MainLayout({ children }) {
   return (
@@ -7,6 +8,7 @@ function MainLayout({ children }) {
       <Navbar />
       <main className="min-h-screen bg-white">{children}</main>
       <Footer />
+      <ScrollToTop />
     </>
   );
 }

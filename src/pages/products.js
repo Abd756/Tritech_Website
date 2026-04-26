@@ -31,7 +31,7 @@ export default function Products() {
         {/* Background Patterns */}
         <div className="absolute inset-0 opacity-10 blur-[2px] pointer-events-none z-0">
           <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary rounded-full blur-[120px] -translate-y-1/2 translate-x-1/2"></div>
-          <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-orange-500 rounded-full blur-[120px] translate-y-1/2 -translate-x-1/2"></div>
+          <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-primary rounded-full blur-[120px] translate-y-1/2 -translate-x-1/2"></div>
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 text-center">
@@ -40,7 +40,7 @@ export default function Products() {
             animate={{ opacity: 1, y: 0 }}
             className="text-4xl md:text-6xl font-extrabold tracking-tight mb-6"
           >
-            Our Industrial <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-orange-400">Solutions</span>
+            Our Industrial <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-yellow">Solutions</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0 }}
@@ -124,7 +124,7 @@ export default function Products() {
                 </div>
 
                 {/* Decorative Accent */}
-                <div className="absolute bottom-0 left-0 h-1 bg-orange-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left w-full"></div>
+                <div className="absolute bottom-0 left-0 h-1 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left w-full"></div>
               </motion.div>
             ))}
           </AnimatePresence>

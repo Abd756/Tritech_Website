@@ -3,6 +3,7 @@ import Carousel from '../components/Carousel';
 import HomeAboutSection from '../components/HomeAboutSection';
 import HomeCertificatesSection from '../components/HomeCertificatesSection';
 import HomeServicesSection from '../components/HomeServicesSection';
+import HomeProductsSection from '../components/HomeProductsSection';
 import dynamic from 'next/dynamic';
 const HomeWhyChooseUsSection = dynamic(() => import('../components/HomeWhyChooseUsSection'), { ssr: false });
 import ClientLogoSlider from '../components/ClientLogoSlider';
@@ -19,9 +20,10 @@ export default function Home() {
                     <Carousel />
                 </div>
                 <HomeAboutSection />
-                <HomeCertificatesSection />
                 <HomeServicesSection />
+                <HomeProductsSection />
                 <HomeWhyChooseUsSection />
+                <HomeCertificatesSection />
                 <ClientLogoSlider />
             </div>
         </>

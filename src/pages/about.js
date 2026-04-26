@@ -43,7 +43,7 @@ export default function About() {
             transition={{ duration: 0.8 }}
             className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6"
           >
-            Engineering <span className="text-orange-500">Excellence</span> Since 1996
+            Engineering <span className="text-primary">Excellence</span> Since 2008
           </motion.h1>
           <motion.p
             initial={{ opacity: 0 }}
@@ -71,23 +71,28 @@ export default function About() {
             <h2 className="text-4xl font-bold text-gray-900">
               Who We <span className="text-primary">Are</span>
             </h2>
-            <div className="w-20 h-1 bg-orange-500 rounded-full"></div>
+            <div className="w-20 h-1 bg-primary rounded-full"></div>
 
-            <p className="text-lg text-gray-600 leading-relaxed">
-              <strong>Interlink Group of Companies</strong> is a premier industrial solutions provider, comprised of two dynamic divisions: <strong>Interlink Enterprises</strong> (Automation) and our Manufacturing Division. Since our inception in 1996, we have been dedicated to transforming the process industry through professionally implemented solutions.
-            </p>
-            <p className="text-lg text-gray-600 leading-relaxed">
-              We bridge the gap between world-class technology manufacturers and local industries, ensuring that our clients have access to 100% original, high-performance products backed by our renowned after-sales support.
-            </p>
+            <div className="space-y-4">
+              <p className="text-lg text-gray-600 leading-relaxed">
+                <strong>TRI TECH (PVT) LIMITED</strong> is a progressive engineering and manufacturing company established in 2008, with its head office and production facility located in Lahore, Pakistan. Operating from a factory covered area of 1,360 square meters, we have developed a strong foundation in delivering reliable, efficient, and high-quality engineering solutions to industrial and commercial clients.
+              </p>
+              <p className="text-lg text-gray-600 leading-relaxed">
+                We specialize in the design engineering of electrical systems, offering innovative and customized solutions that comply with international standards including IEC and PSQCA. Our manufacturing capabilities include Low Voltage (LV) Switchgear, PLC/DCS Control Panels, Cable Management Systems, Belt and Roller Conveyors, and allied machinery.
+              </p>
+              <p className="text-lg text-gray-600 leading-relaxed">
+                From initial design to final implementation, we deliver complete turnkey solutions with a focus on quality workmanship and timely project execution, ensuring dependable operation in demanding environments.
+              </p>
+            </div>
 
             <div className="pt-4 grid grid-cols-2 gap-8">
               <div className="border-l-4 border-primary pl-4">
-                <span className="block text-3xl font-bold text-gray-900">25+</span>
+                <span className="block text-3xl font-bold text-gray-900">15+</span>
                 <span className="text-gray-500">Years of Experience</span>
               </div>
-              <div className="border-l-4 border-orange-500 pl-4">
-                <span className="block text-3xl font-bold text-gray-900">500+</span>
-                <span className="text-gray-500">Projects Completed</span>
+              <div className="border-l-4 border-primary pl-4">
+                <span className="block text-3xl font-bold text-gray-900">1,360</span>
+                <span className="text-gray-500">Sq. Meters Facility</span>
               </div>
             </div>
           </motion.div>
@@ -101,7 +106,7 @@ export default function About() {
           >
             {/* IMAGE PLACEHOLDER: Company Building, Team, or High-Tech Machinery */}
             {/* IMAGE PLACEHOLDER: Company Building, Team, or High-Tech Machinery */}
-            <img src="/images/officeImage.webp" alt="Interlink Corporate Office" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+            <img src="/images/officeImage.webp" alt="Tri-Tech Corporate Office" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
             {/* Decorative colored overlay on hover */}
             <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
           </motion.div>
@@ -119,11 +124,11 @@ export default function About() {
           <div className="bg-gray-900 rounded-3xl md:rounded-[3rem] relative overflow-hidden px-6 py-12 md:p-24 shadow-2xl">
             {/* Background Gradients */}
             <div className="absolute top-0 left-1/4 w-48 h-48 md:w-96 md:h-96 bg-blue-600/20 rounded-full blur-[50px] md:blur-[100px] pointer-events-none"></div>
-            <div className="absolute bottom-0 right-1/4 w-48 h-48 md:w-96 md:h-96 bg-orange-500/20 rounded-full blur-[50px] md:blur-[100px] pointer-events-none"></div>
+            <div className="absolute bottom-0 right-1/4 w-48 h-48 md:w-96 md:h-96 bg-primary/20 rounded-full blur-[50px] md:blur-[100px] pointer-events-none"></div>
 
             <div className="relative z-10">
               <div className="text-center mb-12 md:mb-20">
-                <h2 className="text-2xl md:text-5xl font-bold text-white mb-4 md:mb-6">Our Guiding <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-orange-400">Principles</span></h2>
+                <h2 className="text-2xl md:text-5xl font-bold text-white mb-4 md:mb-6">Our Guiding <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-yellow">Principles</span></h2>
                 <p className="text-gray-400 max-w-2xl mx-auto text-sm md:text-base">The core philosophies that drive our innovation and commitment to excellence.</p>
               </div>
 
@@ -157,12 +162,12 @@ export default function About() {
                   transition={{ duration: 0.6, delay: 0.2 }}
                   className="group relative"
                 >
-                  <div className="absolute -inset-0.5 bg-gradient-to-r from-orange-500 to-amber-500 rounded-2xl blur opacity-30 group-hover:opacity-100 transition duration-500"></div>
-                  <div className="relative h-full bg-gray-800 p-6 md:p-12 rounded-2xl border border-gray-700 hover:border-orange-500/50 transition-colors">
-                    <div className="inline-flex items-center justify-center w-12 h-12 md:w-16 md:h-16 rounded-xl bg-orange-900/50 text-orange-400 mb-6 md:mb-8 group-hover:scale-110 transition-transform duration-300">
+                  <div className="absolute -inset-0.5 bg-gradient-to-r from-primary to-yellow rounded-2xl blur opacity-30 group-hover:opacity-100 transition duration-500"></div>
+                  <div className="relative h-full bg-gray-800 p-6 md:p-12 rounded-2xl border border-gray-700 hover:border-primary/50 transition-colors">
+                    <div className="inline-flex items-center justify-center w-12 h-12 md:w-16 md:h-16 rounded-xl bg-primary/50 text-yellow mb-6 md:mb-8 group-hover:scale-110 transition-transform duration-300">
                       <svg className="w-6 h-6 md:w-8 md:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
                     </div>
-                    <h3 className="text-2xl md:text-3xl font-bold text-white mb-3 md:mb-4 group-hover:text-orange-400 transition-colors">Our Mission</h3>
+                    <h3 className="text-2xl md:text-3xl font-bold text-white mb-3 md:mb-4 group-hover:text-yellow transition-colors">Our Mission</h3>
                     <p className="text-gray-300 leading-relaxed text-base md:text-lg">
                       To empower industries by providing cutting-edge technologies and reliable manufacturing solutions. We aim to build lasting partnerships through integrity, service excellence, and customer satisfaction.
                     </p>
@@ -193,10 +198,10 @@ export default function About() {
             transition={{ duration: 0.6 }}
           >
             <div className="w-full max-w-[300px] rounded-3xl overflow-hidden border-8 border-white shadow-2xl mb-6 relative z-10">
-              <img src="/images/ceo.jpg" alt="Muhammad Irfan - CEO" className="w-full h-auto" />
+              <img src="/images/MianNaveed.jpg" alt="Mian Muhammad Naveed Shahzad - CEO" className="w-full h-auto" />
             </div>
-            <h3 className="text-2xl font-bold text-gray-900">Muhammad Irfan</h3>
-            <p className="text-primary font-medium">CEO, Interlink Enterprises</p>
+            <h3 className="text-2xl font-bold text-gray-900">Mian Muhammad Naveed Shahzad</h3>
+            <p className="text-primary font-medium">Chief Executive Officer, TRI TECH</p>
           </motion.div>
 
           {/* CEO Text Side */}
@@ -211,13 +216,16 @@ export default function About() {
 
             <div className="space-y-6 text-gray-700 leading-relaxed text-lg">
               <p>
-                "Interlink Enterprises is committed to delivering innovative industrial automation and control solutions across a variety of manufacturing sectors. Acknowledged by suppliers and clients over the past decade, our solutions provide relief for automation services and control in a manner that is mutually beneficial and rewarding for the Interlink and our customers.
+                "At TRI TECH (PVT) LIMITED, our journey since 2008 has been driven by a clear vision—to deliver reliable, innovative, and high-quality engineering solutions that contribute to the growth of industry in Pakistan. From our facility in Lahore, we have consistently worked to build trust with our clients through technical excellence, integrity, and commitment."
               </p>
               <p>
-                Over the two decades, the Interlink family has expanded to include categories of clients belonging to the Food, Beverage, Chemical, Pharmaceutical, Oil & Gas Sector, Cement, Fertilizer, Chemical, Paper, Power Plant Steel, Sugar, Textile, Packaging and Automobile industries. Interlink now possesses an immense wealth of knowledge, skillset, and expertise at delivering quality and value-added automation solutions. Using a comprehensive approach, we have adopted the ‘customer-first’ notion in understanding the customer’s need and implementing the automation services and control accordingly. This has enabled us to become fully equipped in carrying out everything from minor modifications to turnkey automation projects in a technically sound manner.
+                "We believe that engineering is not just about systems and machinery, but about creating solutions that add value, improve efficiency, and ensure long-term sustainability. Our strength lies in our dedicated team of professionals who bring expertise in electrical design, manufacturing of LV switchgear and PLC/DCS control panels, and execution of complex projects with precision."
               </p>
               <p>
-                Coupled with our innovative solutions, expertise, dedication, and unparalleled cooperation of team and industry, I am certain that Interlink Enterprise will bring about strong, powerful, and optimized results for the entire Interlink family for the year ahead. We, at Interlink Enterprises, will exert ourselves to respect the clients’ future and live up to their expectations."
+                "As we continue to grow, we remain focused on maintaining international standards such as IEC and PSQCA, while adapting to evolving technologies in automation and industrial systems. Our goal is to provide complete solutions—from design and manufacturing to services and supply—under one roof, ensuring convenience and reliability for our valued clients."
+              </p>
+              <p>
+                "We are grateful for the trust our customers have placed in us and remain committed to exceeding expectations through quality, innovation, and continuous improvement."
               </p>
             </div>
           </motion.div>
@@ -231,7 +239,7 @@ export default function About() {
         {/* Background Elements */}
         <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none opacity-20">
           <div className="absolute top-10 left-10 w-64 h-64 bg-primary rounded-full blur-3xl"></div>
-          <div className="absolute bottom-10 right-10 w-64 h-64 bg-orange-600 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-10 right-10 w-64 h-64 bg-primary rounded-full blur-3xl"></div>
         </div>
 
         <div className="max-w-7xl mx-auto px-6 md:px-0 relative z-10">
@@ -241,7 +249,7 @@ export default function About() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl md:text-5xl font-extrabold mb-6 tracking-tight">Our <span className="text-orange-500">Journey</span></h2>
+            <h2 className="text-4xl md:text-5xl font-extrabold mb-6 tracking-tight">Our <span className="text-primary">Journey</span></h2>
             <p className="text-gray-400 max-w-2xl mx-auto text-lg">
               From humble beginnings to industry leadership – a timeline of our commitment to excellence.
             </p>
@@ -249,7 +257,7 @@ export default function About() {
 
           <div className="relative">
             {/* Central Vertical Line (Desktop) / Left Line (Mobile) */}
-            <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-primary via-orange-500 to-primary md:-ml-0.5 rounded-full opacity-30"></div>
+            <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-primary via-primary to-primary md:-ml-0.5 rounded-full opacity-30"></div>
 
             <div className="space-y-12 md:space-y-24">
 
@@ -262,15 +270,15 @@ export default function About() {
                 transition={{ duration: 0.6 }}
               >
                 <div className="order-1 md:w-5/12 text-left pl-20 md:pl-0 md:text-right md:pr-10">
-                  <span className="text-orange-500 font-bold text-xl block mb-2 tracking-widest">1996</span>
+                  <span className="text-primary font-bold text-xl block mb-2 tracking-widest">2008</span>
                   <h4 className="text-3xl font-bold mb-4 text-white">Inception</h4>
-                  <p className="text-gray-400 leading-relaxed bg-gray-800/50 p-6 rounded-2xl backdrop-blur-sm border border-gray-700 hover:border-orange-500/50 transition-colors">
-                    Interlink Enterprises was founded, setting the foundation for automation excellence in Pakistan. A small team with a massive vision to revolutionize industrial efficiency.
+                  <p className="text-gray-400 leading-relaxed bg-gray-800/50 p-6 rounded-2xl backdrop-blur-sm border border-gray-700 hover:border-primary/50 transition-colors">
+                    TRI TECH (PVT) LIMITED was established in Lahore, Pakistan, setting the foundation for high-quality engineering and manufacturing solutions for the industrial sector.
                   </p>
                 </div>
 
                 {/* Dot */}
-                <div className="absolute left-8 md:left-1/2 -ml-3 w-6 h-6 bg-gray-900 border-4 border-orange-500 rounded-full z-10 shadow-[0_0_15px_rgba(249,115,22,0.6)]"></div>
+                <div className="absolute left-8 md:left-1/2 -ml-3 w-6 h-6 bg-gray-900 border-4 border-primary rounded-full z-10 shadow-[0_0_15px_rgba(192,57,43,0.6)]"></div>
 
                 <div className="order-2 md:w-5/12"></div>
               </motion.div>
@@ -309,7 +317,7 @@ export default function About() {
                   <span className="text-white font-bold text-xl block mb-2 tracking-widest">TODAY</span>
                   <h4 className="text-3xl font-bold mb-4 text-white">Industry Leaders</h4>
                   <p className="text-gray-400 leading-relaxed bg-gray-800/50 p-6 rounded-2xl backdrop-blur-sm border border-gray-700 hover:border-white/50 transition-colors">
-                    Serving hundreds of clients globally with a robust portfolio of certifications and partnerships. Interlink is now a synonymous name for trust and quality in the region.
+                    Serving hundreds of clients globally with a robust portfolio of certifications and partnerships. TRI TECH is now a synonymous name for trust and quality in the region.
                   </p>
                 </div>
 
@@ -334,9 +342,9 @@ export default function About() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <span className="text-orange-500 font-bold tracking-wider uppercase">Our Philosophy</span>
+          <span className="text-primary font-bold tracking-wider uppercase">Our Philosophy</span>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mt-2">Our Core <span className="text-primary">Values</span></h2>
-          <div className="w-24 h-1.5 bg-gradient-to-r from-primary to-orange-500 mx-auto rounded-full mt-6"></div>
+          <div className="w-24 h-1.5 bg-gradient-to-r from-primary to-primary mx-auto rounded-full mt-6"></div>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -369,10 +377,10 @@ export default function About() {
               viewport={{ once: true }}
             >
               {/* Hover Gradient Background */}
-              <div className={`absolute inset-0 bg-gradient-to-br ${value.color === 'orange' ? 'from-orange-50 to-amber-50' : 'from-blue-50 to-indigo-50'} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}></div>
+              <div className={`absolute inset-0 bg-gradient-to-br ${value.color === 'orange' ? 'from-primary/10 to-primary/10' : 'from-blue-50 to-indigo-50'} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}></div>
 
               <div className="relative z-10">
-                <div className={`w-16 h-16 rounded-2xl ${value.color === 'orange' ? 'bg-orange-100 text-orange-600' : 'bg-blue-100 text-primary'} flex items-center justify-center mb-6 text-xl shadow-sm group-hover:scale-110 transition-transform duration-300`}>
+                <div className={`w-16 h-16 rounded-2xl ${value.color === 'orange' ? 'bg-primary/20 text-primary' : 'bg-blue-100 text-primary'} flex items-center justify-center mb-6 text-xl shadow-sm group-hover:scale-110 transition-transform duration-300`}>
                   {value.icon}
                 </div>
 
@@ -383,7 +391,7 @@ export default function About() {
               </div>
 
               {/* Decorative Corner */}
-              <div className={`absolute top-0 right-0 w-24 h-24 ${value.color === 'orange' ? 'bg-orange-500/5' : 'bg-primary/5'} rounded-bl-[4rem] group-hover:scale-150 transition-transform duration-500`}></div>
+              <div className={`absolute top-0 right-0 w-24 h-24 ${value.color === 'orange' ? 'bg-primary/5' : 'bg-primary/5'} rounded-bl-[4rem] group-hover:scale-150 transition-transform duration-500`}></div>
             </motion.div>
           ))}
         </div>
@@ -396,7 +404,7 @@ export default function About() {
           <div className="bg-gradient-to-br from-blue-900 to-gray-900 rounded-[3rem] p-12 md:p-24 text-center relative overflow-hidden shadow-2xl">
             {/* Background Decorations */}
             <div className="absolute top-0 left-0 w-64 h-64 bg-blue-500/20 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
-            <div className="absolute bottom-0 right-0 w-80 h-80 bg-orange-500/20 rounded-full blur-3xl translate-x-1/2 translate-y-1/2"></div>
+            <div className="absolute bottom-0 right-0 w-80 h-80 bg-primary/20 rounded-full blur-3xl translate-x-1/2 translate-y-1/2"></div>
             <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-5"></div>
 
             <div className="relative z-10 max-w-3xl mx-auto">
@@ -406,7 +414,7 @@ export default function About() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
               >
-                Ready to <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-orange-400">Transform</span> Your Industry?
+                Ready to <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-yellow">Transform</span> Your Industry?
               </motion.h2>
 
               <motion.p
@@ -426,7 +434,7 @@ export default function About() {
                 transition={{ delay: 0.2 }}
                 className="flex flex-col sm:flex-row items-center justify-center gap-6"
               >
-                <Link href="/contact" className="group relative px-10 py-5 bg-orange-500 rounded-full font-bold text-white text-lg overflow-hidden shadow-lg hover:shadow-orange-500/50 transition-all duration-300">
+                <Link href="/contact" className="group relative px-10 py-5 bg-primary rounded-full font-bold text-white text-lg overflow-hidden shadow-lg hover:shadow-primary/50 transition-all duration-300">
                   <span className="relative z-10 flex items-center gap-2">
                     Contact Us Today
                     <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>

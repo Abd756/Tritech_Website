@@ -20,7 +20,7 @@ export default function HomeCertificatesSection() {
                     transition={{ duration: 0.6 }}
                     viewport={{ once: true }}
                 >
-                    <h2 className="text-4xl md:text-5xl font-extrabold text-orange-600 mb-6 tracking-tight">
+                    <h2 className="text-4xl md:text-5xl font-extrabold text-primary mb-6 tracking-tight">
                         Our <span className="text-primary">Certifications</span>
                     </h2>
                     <div className="w-24 h-1 bg-primary mx-auto rounded-full mb-8"></div>
@@ -34,7 +34,7 @@ export default function HomeCertificatesSection() {
                     {certificatesData.map((cert, idx) => (
                         <motion.div
                             key={cert.id}
-                            className="group bg-white rounded-xl shadow-sm border border-gray-100 p-4 flex flex-col items-center hover:shadow-lg hover:border-orange-200 transition-all duration-300 relative overflow-hidden cursor-pointer"
+                            className="group bg-white rounded-xl shadow-sm border border-gray-100 p-4 flex flex-col items-center hover:shadow-lg hover:border-primary transition-all duration-300 relative overflow-hidden cursor-pointer"
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: idx * 0.1 }}

@@ -16,7 +16,7 @@ export default function ClientLogoSlider() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl md:text-4xl font-extrabold text-orange-600 tracking-tight mb-4">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-primary tracking-tight mb-4">
             Our Valued <span className="text-primary">Clients</span>
           </h2>
           <div className="w-20 h-1 bg-primary mx-auto rounded-full mb-6"></div>

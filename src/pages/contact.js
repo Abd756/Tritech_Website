@@ -42,7 +42,7 @@ export default function Contact() {
             animate={{ opacity: 1, scale: 1 }}
             className="text-4xl md:text-7xl font-extrabold text-white mb-6 tracking-tight"
           >
-            Let's Build the <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-orange-400">Future</span> Together
+            Let's Build the <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-yellow">Future</span> Together
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -80,19 +80,19 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="text-lg font-bold text-gray-900 mb-1">Our Location</h3>
-                    <p className="text-gray-600 leading-relaxed italic">Al-Siraj park, Building no 118, 1st floor, Mominpura Rd, Daroghawala, Lahore, Pakistan</p>
+                    <p className="text-gray-600 leading-relaxed italic">21 km off Ferozepur Road, Masjid Ibrahim Street, Lahore-Pakistan PO 54760</p>
                   </div>
                 </div>
 
                 {/* Contact details grid */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-orange-50 rounded-xl flex items-center justify-center text-orange-600 flex-shrink-0">
+                    <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary flex-shrink-0">
                       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
                     </div>
                     <div>
                       <h3 className="text-sm font-bold text-gray-400 uppercase tracking-wider">Phone</h3>
-                      <p className="text-gray-900 font-semibold">+92 321 4828131</p>
+                      <p className="text-gray-900 font-semibold">042-3527011 / 12 / 14 / 15</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
@@ -101,7 +101,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <h3 className="text-sm font-bold text-gray-400 uppercase tracking-wider">Email</h3>
-                      <p className="text-gray-900 font-semibold">info@interlink.com</p>
+                      <p className="text-gray-900 font-semibold">info@tritech.com.pk</p>
                     </div>
                   </div>
                 </div>
@@ -109,7 +109,7 @@ export default function Contact() {
                 {/* Map */}
                 <div className="mt-8 h-80 rounded-3xl overflow-hidden shadow-inner border border-gray-100">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3399.2736173268846!2d74.4013143!3d31.5838426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919106093375b63%3A0xe13d78c3c13b63b2!2sMominpura%20Rd%2C%20Lahore%2C%20Pakistan!5e0!3m2!1sen!2s!4v1703340000000!5m2!1sen!2s"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13632.744111305416!2d74.3721343!3d31.3283246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919a9a3b63b63b3%3A0x63b63b3b63b63b3b!2sFerozepur%20Rd%2C%20Lahore%2C%20Pakistan!5e0!3m2!1sen!2s!4v1703340000000!5m2!1sen!2s"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
@@ -135,7 +135,7 @@ export default function Contact() {
               <div className="absolute top-0 right-0 w-64 h-64 bg-primary/20 rounded-full blur-[80px] -translate-y-1/2 translate-x-1/2"></div>
 
               <div className="relative z-10">
-                <h2 className="text-3xl font-bold text-white mb-2">Send us a <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-orange-400">Message</span></h2>
+                <h2 className="text-3xl font-bold text-white mb-2">Send us a <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-yellow">Message</span></h2>
                 <p className="text-gray-400 mb-8">We'll get back to you within 24 hours.</p>
 
                 <form onSubmit={handleSubmit} className="space-y-6">
@@ -189,7 +189,7 @@ export default function Contact() {
                     disabled={formState === 'sending'}
                     className={`w-full py-5 rounded-2xl font-bold text-lg transition-all duration-300 flex items-center justify-center gap-3 ${formState === 'success'
                       ? 'bg-green-500 text-white'
-                      : 'bg-primary text-white hover:bg-orange-500 shadow-lg hover:shadow-orange-500/30'
+                      : 'bg-primary text-white hover:bg-primary shadow-lg hover:shadow-primary/30'
                       }`}
                   >
                     {formState === 'idle' && (
